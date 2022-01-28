@@ -1,2 +1,2 @@
 # SBored
-Python based sound board
+Python sound board
