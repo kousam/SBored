@@ -5,7 +5,7 @@
   Voicemeter Banana  
   Virtual Audio VB-Cable
 
-#Installation
+# Installation
   Download repo  
   Set "VB-Cable output" as a hardware input in Voicemeter  
   Route VB-Cable output to microphone out in Voicemeter
