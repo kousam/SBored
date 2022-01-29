@@ -3,12 +3,12 @@
 
 # Dependencies
   Voicemeter Banana  
-  Virtual Audio VB-Cable  
+  Virtual Audio VB-Cable
 
 #Installation
   Download repo  
   Set "VB-Cable output" as a hardware input in Voicemeter  
-  Route VB-Cable output to microphone out in Voicemeter  
+  Route VB-Cable output to microphone out in Voicemeter
 
 # Use
   Add soundclips to "sounds" folder  
