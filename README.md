@@ -1,15 +1,15 @@
 # SBored
-  It is a sound board  
+  It's a sound board  
 
 # Dependencies
   Voicemeter Banana  
   Virtual Audio VB-Cable
 
 # Installation
-  Download repo  
-  Set "VB-Cable output" as a hardware input in Voicemeter  
-  Route VB-Cable output to your virtual microphone output in Voicemeter
+  1. Clone the repo  
+  2. Set "VB-Cable output" as a hardware input in Voicemeter  
+  3. Route VB-Cable output to your virtual microphone output in Voicemeter
 
 # Use
-  Add soundclips to "sounds" folder  
-  Run SBored.pyw  
+  1. Add soundclips to "sounds" folder  
+  2. Run SBored.pyw  
