@@ -7,7 +7,7 @@
   - Virtual Audio VB-Cable
   - (FFMPEG for mp3 files)
     
- ##Python libraries  
+ ## Python libraries  
   - audio2numpy
   - sounddevice
 
