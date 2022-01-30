@@ -2,7 +2,6 @@ from audio2numpy import open_audio
 import sounddevice as sd
 import os
 
-from pynput.keyboard import Key, Listener
 
 
 class Sound:
@@ -57,6 +56,9 @@ class DataManager:
         self.sound_dict[_title] = sound
 
     def load(self, _dir):
+        if not os.path.isdir(_dir):
+            os.mkdir(_dir)
+        
         for file in os.listdir(_dir):
             if file.endswith(".mp3") or file.endswith(".wav"):
                 title = file.split('.')[0]
@@ -81,11 +83,10 @@ class DataManager:
 class App:
     def __init__(self):
         self.data_mgr = DataManager()
-        self.file_dir = '.\\Sounds'
+        self.file_dir = '.\\sounds'
         sd.default.samplerate = 48000
         sd.default.device = 'CABLE Input (VB-Audio Virtual C, MME'
 
-        self.k = KeyInput(self)
 
     def play(self, _title):
 
@@ -103,7 +104,7 @@ class App:
 
     def quit(self):
         self.stop()
-        self.k.listener.stop()
+
     
     def stop(self):
         sd.stop()
@@ -123,43 +124,7 @@ class App:
 
 
 
-class KeyInput:
-    def __init__(self, app):
-        self.app = app
-        self.listener = Listener(on_press=self.on_press, on_release=self.on_release)
-        self.listener.start()
 
-    def start(self):
-        
-        self.listener.join()
-##        with Listener(on_press=self.on_press, on_release=self.on_release) as self.listener:
-##            self.listener.join()
-
-    def on_press(self, key):
-        if isinstance(key, Key):
-            key_id = key.name
-        else:
-            key_id = key.vk
-
-        
-        self.action(key_id)
-
-    def on_release(self, key):
-        if isinstance(key, Key):
-            key_id = key.name
-        else:
-            key_id = key.vk
-
-
-          
-        
-
-    def action(self, key_id):
-        if key_id == 103:
-            self.app.play('HIIII')
-
-        elif key_id == 104:
-            self.app.play('BYE')
 
 
 
