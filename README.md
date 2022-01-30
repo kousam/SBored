@@ -1,10 +1,12 @@
 # SBored
-  It's a sound board  
+  - It's a sound board
+  - Supports .wav and .mp3 file formats (mp3 requires FFMPEG)
 
 # Dependencies
   - Voicemeter Banana  
   - Virtual Audio VB-Cable
-  
+  - (FFMPEG for mp3 files)
+    
   Python libraries  
   - audio2numpy
   - sounddevice
