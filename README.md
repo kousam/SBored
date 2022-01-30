@@ -5,7 +5,7 @@
 # Dependencies
   - Voicemeter Banana  
   - Virtual Audio VB-Cable
-  - (FFMPEG for mp3 files)
+  - (FFMPEG for mp3 file support)
     
  ## Python libraries  
   - audio2numpy
