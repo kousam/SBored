@@ -15,7 +15,10 @@
   1. Clone the repo  
   2. Set "VB-Cable output" as a hardware input in Voicemeter  
   3. Route VB-Cable output to your virtual microphone output in Voicemeter
+  4. Run SBored.pyw. It will create a directory called "sounds"  
+  5. Close SBored
 
 # Use
-  1. Add soundclips to "sounds" folder  
+  1. Add soundclips to "sounds"  
   2. Run SBored.pyw  
+  3. Click buttons
