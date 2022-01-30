@@ -2,8 +2,12 @@
   It's a sound board  
 
 # Dependencies
-  Voicemeter Banana  
-  Virtual Audio VB-Cable
+  - Voicemeter Banana  
+  - Virtual Audio VB-Cable
+  
+  Python libraries  
+  - audio2numpy
+  - sounddevice
 
 # Installation
   1. Clone the repo  
