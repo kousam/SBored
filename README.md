@@ -19,6 +19,6 @@
   5. Close SBored
 
 # Use
-  1. Add soundclips to "sounds"  
+  1. Add sound files to "sounds" directory  
   2. Run SBored.pyw  
   3. Click buttons
